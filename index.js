@@ -1,3 +1,5 @@
+require('dotenv').config();
+require('newrelic');
 const app = require('./server/server.js');
 
 app.listen(3000, () => {
