@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 const redirectRequest = ({
-    originalURL,
+    originalUrl,
     headers,
     method,
     params,
