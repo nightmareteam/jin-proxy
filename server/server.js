@@ -4,7 +4,7 @@ const redirectRequest = require('./utils/redirectRequest')
 
 const app = express();
 
-app.get('/api/:service', (req, res) => {
+app.get('/api/:service/*', (req, res) => {
     const { service } = req.params;
     const { [service]: domain } = DOMAINS;
     redirectRequest(req, domain)
