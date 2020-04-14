@@ -1,5 +1,5 @@
 const DOMAINS = {
-    'recent-news': 'http://localhost:3003',
+    'recent-news': process.env.RECENT_SERVICE_DOMAIN,
 }
 
 module.exports = DOMAINS;
