@@ -12,10 +12,7 @@ const redirectRequest = ({
         params,
         method,
         data,
-        headers: {
-            ...headers,
-            'Cache-Control': 'no-cache'
-        }
+        headers,
     })
 );
 
